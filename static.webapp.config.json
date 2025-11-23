@@ -1,6 +1,12 @@
 {
-    "routes": [
-      { "route": "/images/*", "serve": "/images-folder/:splat" }
-    ]
-  }
-  
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*", "/images/*"]
+  },
+  "routes": [
+    {
+      "route": "/images/*",
+      "serve": "/static/images/:splat"
+    }
+  ]
+}
