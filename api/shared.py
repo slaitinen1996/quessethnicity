@@ -2,8 +2,8 @@ import os
 import json
 import random
 
-LOCAL_IMAGES_DIR = 'images-folder'
-DATA_FILE = 'data.json'
+DATA_FILE = os.path.join(os.path.dirname(__file__), "data.json")
+LOCAL_IMAGES_DIR = os.path.join(os.path.dirname(__file__), "../static/images")
 
 def load_data():
     if os.path.exists(DATA_FILE):
@@ -16,5 +16,4 @@ def save_data(data):
         json.dump(data, f, indent=2)
 
 def get_image_url(path):
-    # Adjust if you later move images to Blob Storage
     return f"/images/{path}"
