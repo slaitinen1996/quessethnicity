@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Ethnicity Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Guess Ethnicity</h1>
+            <div class="score">Score: <span id="score">0</span> / <span id="total">0</span></div>
+        </header>
+
+        <main id="game-container">
+            <div id="loading" class="loading">Loading...</div>
+            
+            <div id="game-area" class="game-area hidden">
+                <div class="image-container">
+                    <img id="celebrity-image" src="" alt="Celebrity">
+                </div>
+                
+                <div class="question">
+                    <h2>What is this person's ethnicity?</h2>
+                </div>
+                
+                <div id="options-container" class="options-container">
+                </div>
+                
+                <div id="feedback" class="feedback hidden">
+                    <p id="feedback-text"></p>
+                    <button id="next-button" class="btn btn-primary">Next Question</button>
+                </div>
+            </div>
+
+            <div id="error-message" class="error hidden"></div>
+        </main>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

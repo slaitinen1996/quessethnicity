@@ -1,0 +1,42 @@
+{
+  "ethnicities": [
+    "East Asian",
+    "Southeast Asian",
+    "South Asian",
+    "Middle Eastern",
+    "North African",
+    "Sub-Saharan African",
+    "Northern European",
+    "Southern European",
+    "Eastern European",
+    "Latin American",
+    "Caribbean",
+    "Pacific Islander"
+  ],
+  "images": [
+    {
+      "path": "sample1.jpg",
+      "ethnicity": "East Asian",
+      "order": 0,
+      "name": "Sample Person 1"
+    },
+    {
+      "path": "sample2.jpg",
+      "ethnicity": "Northern European",
+      "order": 6,
+      "name": "Sample Person 2"
+    },
+    {
+      "path": "sample3.jpg",
+      "ethnicity": "Latin American",
+      "order": 9,
+      "name": "Sample Person 3"
+    },
+    {
+      "path": "peruvian1.jpg",
+      "ethnicity": "Latin American",
+      "order": 9,
+      "name": "Peruvian grandma"
+    }
+  ]
+}

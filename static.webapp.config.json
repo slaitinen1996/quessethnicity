@@ -1,0 +1,6 @@
+{
+    "routes": [
+      { "route": "/images/*", "serve": "/images-folder/:splat" }
+    ]
+  }
+  
